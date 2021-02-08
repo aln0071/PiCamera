@@ -50,3 +50,10 @@ sudo apt-get install python3-opencv
 3) Start the camera receiver code on your local system.
 
 > Note: Make sure that both your local system and the Raspberry Pi are connected to the same network for any communication to take place.
+
+### Step 4: Running the Audio Receiver code
+1) Install pyaudio library on the Raspberry Pi, and on the system sending audio to the Raspberry Pi with command ```sudo apt-get install python3-pyaudio```.
+2) Run the script audio_receiver.py on the Raspberry Pi using command ```python3 audio_receiver.py```.
+3) Run the script audio_sender.py on the system sending audio to the Raspberry Pi using command ```python3 audio_sender.py```.
+
+Now, when you talk through your microphone, it will be played by the Raspberry Pi through the connected speaker or HDMI device.
