@@ -117,11 +117,12 @@ If you did everything correct, you should see the feed from the Raspberry Pi cam
 > Be sure to modify the IP address in the pc.cpp program so that it listens to the address of the Raspberry Pi. Change port number is required. By default, the port is 8080. Change the AES-256 key and IV. To generate a new random key, use the command `pwgen -N 1 -s 256` on Ubuntu.
 
 References used:
-[https://gist.github.com/sammy17/b391c68a91f381aad0d149e325e6a87e](https://gist.github.com/sammy17/b391c68a91f381aad0d149e325e6a87e)
-[https://medium.com/@athul929/capture-an-image-using-v4l2-api-5b6022d79e1d](https://medium.com/@athul929/capture-an-image-using-v4l2-api-5b6022d79e1d)
-[https://gist.github.com/maxlapshin/1253534](https://gist.github.com/maxlapshin/1253534)
-[https://web.archive.org/web/20110520211256/http://v4l2spec.bytesex.org/spec/capture-example.html](https://web.archive.org/web/20110520211256/http://v4l2spec.bytesex.org/spec/capture-example.html)
-[http://derekmolloy.ie/beaglebone/beaglebone-video-capture-and-image-processing-on-embedded-linux-using-opencv/](http://derekmolloy.ie/beaglebone/beaglebone-video-capture-and-image-processing-on-embedded-linux-using-opencv/)
+
+- [https://gist.github.com/sammy17/b391c68a91f381aad0d149e325e6a87e](https://gist.github.com/sammy17/b391c68a91f381aad0d149e325e6a87e)
+- [https://medium.com/@athul929/capture-an-image-using-v4l2-api-5b6022d79e1d](https://medium.com/@athul929/capture-an-image-using-v4l2-api-5b6022d79e1d)
+- [https://gist.github.com/maxlapshin/1253534](https://gist.github.com/maxlapshin/1253534)
+- [https://web.archive.org/web/20110520211256/http://v4l2spec.bytesex.org/spec/capture-example.html](https://web.archive.org/web/20110520211256/http://v4l2spec.bytesex.org/spec/capture-example.html)
+- [http://derekmolloy.ie/beaglebone/beaglebone-video-capture-and-image-processing-on-embedded-linux-using-opencv/](http://derekmolloy.ie/beaglebone/beaglebone-video-capture-and-image-processing-on-embedded-linux-using-opencv/)
 
 The original implementation was using UDP which is in the `udp` folder. I implemented TCP because my ISP is not opening UDP ports. The TCP implementation is little glitchy as it is a connection-oriented protocol. I am not sure if there can be a better implementation without glitches using TCP, but you are welcome to rase a PR with better implementation if you have one.
 
